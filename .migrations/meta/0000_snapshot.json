@@ -1,0 +1,138 @@
+{
+  "id": "00000000-0000-0000-0000-000000000000",
+  "prevId": "",
+  "version": "6",
+  "dialect": "sqlite",
+  "tables": {
+    "Usuario": {
+      "name": "Usuario",
+      "columns": {
+        "id_usuario": {
+          "autoincrement": false,
+          "name": "id_usuario",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "nombre": {
+          "autoincrement": false,
+          "name": "nombre",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "edad": {
+          "autoincrement": false,
+          "name": "edad",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "correo": {
+          "autoincrement": false,
+          "name": "correo",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "contrasena": {
+          "autoincrement": false,
+          "name": "contrasena",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "Actividades": {
+      "name": "Actividades",
+      "columns": {
+        "id_actividades": {
+          "autoincrement": false,
+          "name": "id_actividades",
+          "type": "integer",
+          "primaryKey": true,
+          "notNull": false
+        },
+        "actividad": {
+          "autoincrement": false,
+          "name": "actividad",
+          "type": "text",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "puntos": {
+          "autoincrement": false,
+          "name": "puntos",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {},
+      "uniqueConstraints": {}
+    },
+    "Usuario_actividades": {
+      "name": "Usuario_actividades",
+      "columns": {
+        "id_usuario": {
+          "autoincrement": false,
+          "name": "id_usuario",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        },
+        "id_actividades": {
+          "autoincrement": false,
+          "name": "id_actividades",
+          "type": "integer",
+          "primaryKey": false,
+          "notNull": false
+        }
+      },
+      "compositePrimaryKeys": {},
+      "indexes": {},
+      "foreignKeys": {
+        "Usuario_actividades_id_actividades_actividades_id_fk": {
+          "name": "Usuario_actividades_id_actividades_actividades_id_fk",
+          "tableFrom": "Usuario_actividades",
+          "tableTo": "actividades",
+          "columnsFrom": [
+            "id_actividades"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        },
+        "Usuario_actividades_id_usuario_usuario_id_fk": {
+          "name": "Usuario_actividades_id_usuario_usuario_id_fk",
+          "tableFrom": "Usuario_actividades",
+          "tableTo": "usuario",
+          "columnsFrom": [
+            "id_usuario"
+          ],
+          "columnsTo": [
+            "id"
+          ],
+          "onDelete": "no action",
+          "onUpdate": "no action"
+        }
+      },
+      "uniqueConstraints": {}
+    }
+  },
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  }
+}
