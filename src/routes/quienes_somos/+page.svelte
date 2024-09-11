@@ -1,3 +1,0 @@
-<h1>
-    SOMOS LOS ESTUDIANTES DE 11
-</h1>

@@ -1,1 +1,0 @@
-<h1>proxima egresada</h1>
