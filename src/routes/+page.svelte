@@ -1,14 +1,13 @@
 <script>
     const {data}= $props();
 
-    const {profes}= data.profes
+    const profesores = data.profes;
 </script>
 
 
 
-
     <header class="Nav">
-        <a href="#" class="Logo">Reduce, Reutiliza y Recicla </a>
+        <a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
         <nav class="EN">
             <a href="http://127.0.0.1:5500/Inicio.html">Inicio</a>
             <a href="http://127.0.0.1:5500/Actividades.html">Actividades</a>
@@ -28,26 +27,15 @@
             <a href="http://127.0.0.1:5500/FROM.html/Resgistro.html">Registrate</a>
         </div>
         <div class="Inicio-link">
-            <a href="#"><i class='bx bxl-facebook'></i></a>
-            <a href="#"><i class='bx bxl-gmail'></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
+            <a href="/"><i class='bx bxl-facebook'></i></a>
+            <a href="/"><i class='bx bxl-gmail'></i></a>
+            <a href="/"><i class='bx bxl-instagram' ></i></a>
         </div>
     </section>
 
 
 <style>
-   body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    color: rgba(0, 0, 0, 0.8);
-    background-image: url(fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    object-fit: cover;
-}
+
 header {
     position: fixed;
     top: 0;
@@ -104,13 +92,7 @@ header {
     font-size: 16px;
     margin: 20px 0 40px;
 }
-.Inicio-contenido .Ingresa {
-    display: flex;
-    justify-content: space-between ;
-    width: 345px;
-    height: 50px;
-    color: black;
-}
+
 .Ingresa a {
     position: relative;
     display: inline-flex;
@@ -146,21 +128,7 @@ header {
     background: #005200;
 
 }
-.Ingresa a ::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #719271;
-    z-index: -1;
-    transition: .5s;
-}
-.Ingresa a:hover ::before{
-    width: 100%;
 
-}
 .Inicio-link {
     position: absolute;
     bottom: 40px;
@@ -204,4 +172,4 @@ header {
 }
 </style>
 
-{profes}
+{profesores}

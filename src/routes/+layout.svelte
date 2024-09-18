@@ -1,6 +1,7 @@
 <script>
     let{children} = $props()
     import footer from '$lib/components/footer.svelte';
+    import '../app.css'
 </script>
 
 <a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
