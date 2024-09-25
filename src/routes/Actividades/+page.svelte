@@ -157,8 +157,9 @@
      </div>
 
  </section>
-
-<style>
+   
+ 
+  <style>
     body {
     font-family: 'Arial', sans-serif;
     background-image: url(FONDO\ ACTIVIDADES);
@@ -265,4 +266,4 @@ div.galeria:hover{
     color: green;
 }
 
-</style>
+  </style>
