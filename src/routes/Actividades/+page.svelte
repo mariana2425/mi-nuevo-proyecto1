@@ -1,3 +1,4 @@
+<main class="bodymi">
 <header class="Nav">
     <h1>RECICLA PARA UN MUNDO MEJOR</h1>
     <nav class="EN">
@@ -47,7 +48,7 @@
                     <ul><li>Como ves, es muy fácil y divertido contribuir a cuidar el medio ambiente con el reciclaje creativo. Anímate y cuéntanos tus experiencias y tus ideas creativas para reciclar.</li></ul>
                     <br>
                     <p>VIDEO REFERENTE ⬇️ </p>
-                    <iframe width="500" height="200" src="https://www.youtube.com/watch?v=c-G6BcEaBiY" frameborder="0"></iframe>
+                    <iframe width="500" height="200" src="https://www.youtube.com/watch?v=c-G6BcEaBiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
              </div>
          </div>
         </div>
@@ -157,10 +158,12 @@
      </div>
 
  </section>
+</main>
    
  
-  <style>
-    body {
+
+<style>
+    .bodymi {
     font-family: 'Arial', sans-serif;
     background-image: url(FONDO\ ACTIVIDADES);
     color: #0e0d0d;
@@ -178,18 +181,6 @@ header h1 {
     text-align: center;
     padding: 20px;
     color: #ededed;
-}
-
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #080808;
-    text-decoration: none;
-    font-size: 18px;
 }
 
 section {
@@ -210,22 +201,6 @@ p {
     font-weight: 700;
 }
 
-footer {
-    background-color: #333;
-    color: #0f0f0f;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.actividad {
-    display: none;
-    text-decoration: dashed;
-    font-weight: 800;
-}
 
 h1{
     color: white;
@@ -266,4 +241,4 @@ div.galeria:hover{
     color: green;
 }
 
-  </style>
+</style>
