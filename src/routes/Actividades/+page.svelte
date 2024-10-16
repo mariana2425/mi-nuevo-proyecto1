@@ -1,3 +1,8 @@
+<script>
+    import ImagenRara from "$lib/images/"
+</script>
+
+
 <main class="bodymi">
 <header class="Nav">
     <h1>RECICLA PARA UN MUNDO MEJOR</h1>

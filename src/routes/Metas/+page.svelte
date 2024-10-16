@@ -1,3 +1,4 @@
+
 <main class="bodym">
 <header class="Nav">
     <a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
@@ -44,10 +45,13 @@
 </main>
 
 <style>
-
-.bodym {
+    .bodym {
     font-family: 'Arial', sans-serif;
     background-color: #e9f7e8; 
+    background-image: url(FONDO\ ACTIVIDADES);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 20px;
@@ -57,10 +61,26 @@
     line-height: 1.6;
 }
 
+header {
+    padding: 20px;
+    width: 1000px;
+    text-align: center;
+    background-color: #258d19;
+}
+
+header h2 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    color: #fcf8f8;
+}
+
+
 
 .Logo {
     font-size: 24px;
-    color: #2b7a3e;
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s, transform 0.3s;
@@ -72,24 +92,22 @@
     transform: scale(1.05);
 }
 
-
 .EN {
     margin: 20px 0;
 }
 
 .EN a {
     margin-right: 15px;
-    color: #2b7a3e;
+    color: #fdfdfd;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s, text-shadow 0.3s;
 }
 
 .EN a:hover {
-    color: #1e5830;
+    color: #f2faf5;
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
-
 
 .Actividades {
     background: linear-gradient(135deg, #d4f3d4, #b2e0b2); 
@@ -124,66 +142,52 @@
     color: #2b7a3e;
 }
 
-input[type="checkbox"] {
-    margin-right: 10px;
-}
 
-
-input[type="submit"] {
-    background-color: #2b7a3e;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-input[type="submit"]:hover {
-    background-color: #1e5830;
-    transform: scale(1.05);
-}
-
-
-.gota-agua-container {
-    display: flex;
-    align-items: center;
-}
-.gota-agua {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    transition: background-color 0.5s ease;
-    margin-right: 10px;
-    position: relative;
-}
-.gota-agua::after {
-    content: attr(data-message);
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 14px;
-    color: white;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 5px;
-    white-space: nowrap;
-    visibility: hidden;
-}
-.gota-agua:hover::after {
-    visibility: visible;
-}
-.gota-agua.gris {
-    background-color: #bbb;
-}
-.gota-agua.azul {
-    background-color: #008CBA;
-}
-.gota-agua.rojo {
-    background-color: #f44336;
-}
-.gota-agua.verde {
-    background-color: #4CAF50;
-}
+    .stats {
+        margin-top: 20px;
+    }
+    .gota-agua-container {
+        display: flex;
+        align-items: center;
+    }
+    .gota-agua {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        transition: background-color 0.5s ease;
+        margin-right: 10px;
+        position: relative;
+    }
+    .gota-agua::after {
+        content: attr(data-message);
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        color: white;
+        padding: 5px;
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 5px;
+        white-space: nowrap;
+        visibility: hidden;
+    }
+    .gota-agua:hover::after {
+        visibility: visible;
+    }
+    .gota-agua.gris {
+        background-color: #bbb;
+    }
+    .gota-agua.rojo {
+        background-color: #f44336;
+    }
+    .gota-agua.amarillo {
+        background-color: #ffeb3b;
+    }
+    .gota-agua.rosado {
+        background-color: #ff69b4; 
+    }
+    .gota-agua.verde {
+        background-color: #4CAF50; 
+    }
 </style>
