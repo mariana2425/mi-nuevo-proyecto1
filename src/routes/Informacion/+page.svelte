@@ -1,26 +1,140 @@
-<header class="Nav">
-    <a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
-    <nav class="EN">
-        <a href="http://127.0.0.1:5500/Inicio.html">Inicio</a>
-        <a href="http://127.0.0.1:5500/Actividades.html">Actividades</a>
-        <a href="http://127.0.0.1:5500/Informacion.html">Información</a>
-        <a href="http://127.0.0.1:5500/Iniciosesion.html">Iniciar Sesión</a>
-        <a href="http://127.0.0.1:5500/Resgistro.html">Resgistro</a>
-        <a href="http://127.0.0.1:5500/Funcionalidad.html">Mis metas</a>
+<script>
+    let activeActivity = null;
+
+    function showActivity(activityId) {
+        activeActivity = activityId;
+    }
+</script>
+
+<header>
+    <h1>¡Reciclemos Juntos!</h1>
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/Inicio.html">inicio</a></li>
+            <li><a href="http://127.0.0.1:5500/Actividades.html">actividades</a></li>
+            <li><a href="http://127.0.0.1:5500/Informacion.html">información</a></li>
+            <li><a href="http://127.0.0.1:5500/ingreso.html?#">Inicio Sesion</a></li>
+            <li><a href="http://127.0.0.1:5500/Funcionalidad.html">Mis metas</a></li>
+            
+        </ul>
     </nav>
 </header>
-<section class="Inicio">
-    <div class="Inicio-contenido">
-        <h1>"Hola, Bienvenido a Recicla y Crea"</h1>
-        <p>Aprende y participa en nuestras actividades de reciclaje para contribuir a un planeta más limpio.</p>
-    </div>
-    <div class="Ingresa">
-        <a href="http://127.0.0.1:5500/FROM.html/Iniciosesion.html">Inicia Sesion</a>
-        <a href="http://127.0.0.1:5500/FROM.html/Resgistro.html">Registrate</a>
-    </div>
-    <div class="Inicio-link">
-        <a href="/"><i class='bx bxl-facebook'></i></a>
-        <a href="/"><i class='bx bxl-gmail'></i></a>
-        <a href="/"><i class='bx bxl-instagram' ></i></a>
+
+
+
+<section id="intro">
+    <h2>¿Por qué Reciclar?</h2>
+    <p>Reciclar es importante por varias razones. En primer lugar, ayuda a reducir la cantidad de basura que termina en los vertederos y la incineración, lo que a su vez reduce la contaminación del medio ambiente. <br>
+      Además, el reciclaje ayuda a ahorrar recursos naturales, como agua y energía, ya que se requiere menos energía para producir nuevos productos a partir de materiales reciclados que para producirlos a partir de materias primas vírgenes. <br> 
+      El reciclaje también reduce la necesidad de extraer materias primas, lo que ayuda a proteger el medio ambiente y a conservar los recursos naturales. <br>
+      Otro beneficio del reciclaje es que ayuda a reducir las emisiones de gases de efecto invernadero, lo que contribuye a mitigar el cambio climático.</p>
+</section>
+
+<section id="tipos">
+    <h2>Tipos de Reciclaje</h2>
+     
+    
+    <div class="cards">
+      <div class="card red">
+        <p class="tip">reciclaje de materiales</p>
+        <p class="second-text">Consiste en la recolección y procesamiento de materiales como: <br>
+             ⁠Papel y cartón <br>
+             ⁠Plásticos <br>
+             ⁠Vidrio <br>
+             ⁠Metales <br>
+            Estos materiales se transforman en nuevos productos, <br>
+             reduciendo la necesidad de recursos naturales y minimizando los residuos.</p>
+      </div>
+      <div class="card blue">
+        <p class="tip">Reciclaje orgánico</p>
+        <p class="second-text">Se enfoca en la transformación de residuos orgánicos como: <br>
+             ⁠Comida y restos de alimento <br>
+             ⁠Residuos de jardín y parques <br>
+             ⁠Excrementos animales <br>
+             </p>
+      </div>
+      <div class="card green">
+        <p class="tip">Reciclaje electrónico</p>
+        <p class="second-text"> se centra en la recolección y procesamiento de: <br>
+             ⁠Electrónicos obsoletos (ordenadores, teléfonos, etc.) <br>
+             ⁠Componentes electrónicos <br>
+             ⁠Baterías y acumuladores <br>
+
+            </p>
+      </div>
+      
     </div>
 </section>
+
+<section id="informacion">
+
+  <h2>¿COMO USAR CADA CANECA DE BASURA SEGUN SU COLOR?</h2>
+  <button on:click={() => showActivity('CanecaAmarilla')}>CANECA AMARILLA</button>
+  <button on:click={() => showActivity('CanecaAzul')}>CANECA AZUL</button>
+  <button on:click={() => showActivity('CanecaVerde')}>CANECA VERDE</button>
+  <button on:click={() => showActivity('CanecaRoja')}>CANECA ROJA</button>
+  <button on:click={() => showActivity('CanecaGris')}>CANECA GRIS</button>
+  <button on:click={() => showActivity('CanecaNaranja')}>CANECA NARANJA</button>
+  <button on:click={() => showActivity('CanecaNegra')}>CANECA NEGRA</button>
+  <button on:click={() => showActivity('CanecaBlanca')}>CANECA BLANCA</button>
+
+  <div id="CanecaAmarilla" class="actividad">
+    <h3>El contenedor AMARILLO está destinado a los envases de plástico, latas o envases tipo brik.</h3>
+      <ul>
+          <li>ENVASES DE PLÁSTICO: botellas y garrafas de agua, de refrescos, de aceite; aros que sujetan los packs de latas; envases de yogur, de mantequilla; bandejas de “corcho blanco”; botes de productos de limpieza, detergentes líquidos; envases de cosméticos, gel, champú, cremas,: tapas y tapones de plástico; etc.
+          <li>BOLSAS DE PLÁSTICO: bolsas de comercios y envoltorios, papel film (aluminio), envases tipo blister,  etc.</li>
+          <li>ENVASES TIPO BRIK: de leche, zumo, vino, aceite, etc.</li>
+          <li>ENVASES METÁLICOS: latas de bebidas, botes de conserva, aerosoles, bandejas y papel de aluminio, chapas y tapas metálicas, etc.</li>
+      </ul>
+   <img src="contenedor-amarillo.jpg" width="200" >
+  </div>
+  <div id="CanecaAzul" class="actividad">
+      <h3>El contenedor AZUL está destinado a los envases de papel y cartón.</h3>
+      <li>Folios, libretas, periódicos, revistas, papel de regalo y de envolver, sobres (sin ventanilla), folletos de publicidad.
+      <li>Cajas, piezas de cartón y envases (de cereales, galletas, comidas pre-cocinadas y congeladas, comida rápida, zapatos, etc.).</li>
+      <li>Hueveras de cartón, tubos de cartón del papel higiénico o de las servilletas de cocina.</li>
+      <img src="contenedor-azul.jpg" width="200">
+  </div>
+  <div id="CanecaVerde" class="actividad">
+      <h3>caneca VERDE <br>
+        para depositar residuos orgánicos aprovechables como los restos de comida, desechos agrícolas etc.</h3>
+      <img src="contenedor-verde.jpg" width="200">
+      
+  </div>
+  <div id="CanecaRoja" class="actividad">
+      <h3>En la caneca roja. <br>
+         Se deben depositar únicamente para residuos hospitalarios y similares que contengan bacterias, parásitos, virus, hongos e infecciosos como: guantes quirúrgicos, agujas, jeringas, gasas, e</h3>
+      <img src="Contenedor rojo" width="200">
+      
+  </div>
+  <div id="CanecaGris" class="actividad">
+      <h3>Caneca gris: <br>
+         Aquí se deben depositar todo tipo de papeles y cartones, sin importar su procedencia, siempre y cuando sean limpios y secos; las revistas, periódicos, folletos o papeles para envolver son algunos ejemplos de residuos que puede desechar en estos recipientes</h3>
+      <img src="contenedor-gris.jpg" width="200">
+      
+  </div>
+  <div id="CanecaNaranja" class="actividad">
+      <h3>en el contenedor naranja/marrón <br>
+        los restos de alimentos (cáscaras de fruta, espinas de pescado, etc.).</h3>
+      <img src="Contenedor naranja.avif" width="200">
+      <img src="contenedor-marron.jpg" alt="">
+      
+  </div>
+  <div id="CanecaNegra" class="actividad">
+      <h3>Color negro: <br>
+         Para depositar residuos no aprovechables como el papel higiénico; servilletas, papeles y cartones contaminados con comida; papeles metalizados, entre otros.</h3>
+      <img src="Contenedor negro.jpg" width="200">
+      
+  </div>
+  <div id="CanecaBlanca" class="actividad">
+      <h3> Caneca Blanca: <br>
+        allí deben ir los residuos aprovechables como plástico, metales, cartón, papel, vidrio, PET. </h3>
+      <img src="Contenedor blanco.jpg" width="200">
+      
+  </div>
+</section>
+
+<footer>
+    <p>&copy; proyecto de grado 2024</p>
+</footer>
+

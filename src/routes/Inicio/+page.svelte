@@ -2,11 +2,11 @@
 <header class="Nav">
     <a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
     <nav class="EN">
-        <a href="http://127.0.0.1:5500/Inicio.html">Inicio</a>
-        <a href="http://127.0.0.1:5500/Actividades.html">Actividades</a>
-        <a href="http://127.0.0.1:5500/Informacion.html">Información</a>
-        <a href="http://127.0.0.1:5500/Iniciosesion.html" >Iniciar Sesión</a>
-        <a href="http://127.0.0.1:5500/Funcionalidad.html">Mis metas</a>
+        <a href="/inicio">Inicio</a>
+            <a href="/Actividades">Actividades</a>
+            <a href="/Informacion">Información</a>
+            <a href="/Iniciosesion">Iniciar Sesión</a>
+            <a href="/Metas">Mis metas</a>
     </nav>
 </header>
 <section class="Inicio">
@@ -15,7 +15,7 @@
         <p>Aprende y participa en nuestras actividades de reciclaje para contribuir a un planeta más limpio.</p>
     </div>
     <div class="Ingresa">
-        <a href="http://127.0.0.1:5500/ingreso.html?#" >Iniciar Sesión</a>
+        <a href="/Iniciosesion" >Iniciar Sesión</a>
     </div>
     <div class="Inicio-link">
         <a href="/"><i class='bx bxl-facebook'></i></a>

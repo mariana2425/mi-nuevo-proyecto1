@@ -7,9 +7,9 @@
         <nav class="EN">
             <a href="/Inicio">Inicio</a>
             <a href="/Actividades">Actividades</a>
-            <a href="http://127.0.0.1:5500/Informacion.html">Información</a>
-            <a href="http://127.0.0.1:5500/Iniciosesion.html">Iniciar Sesión</a>
-            <a href="http://127.0.0.1:5500/Funcionalidad.html">Mis metas</a>
+            <a href="/Informacion">Información</a>
+            <a href="/Iniciosesion">Iniciar Sesión</a>
+            <a href="/Metas">Mis metas</a>
         </nav>
     </header>
     <section class="Inicio">
