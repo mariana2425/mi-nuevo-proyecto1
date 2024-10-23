@@ -1,17 +1,13 @@
 
+<script>
+    import Menu from "$lib/components/Menu.svelte";
+</script>
+
+
+<a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
+
 <main class="miBody">
 
-    
-    <header class="Nav">
-        <a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
-        <nav class="EN">
-            <a href="/Inicio">Inicio</a>
-            <a href="/Actividades">Actividades</a>
-            <a href="/Informacion">Información</a>
-            <a href="/Iniciosesion">Iniciar Sesión</a>
-            <a href="/Metas">Mis metas</a>
-        </nav>
-    </header>
     <section class="Inicio">
         <div class="Inicio-contenido">
             <h1>"Hola, Bienvenido a Recicla y Crea"</h1>
@@ -68,17 +64,7 @@ header {
     font-family: 'Poppins', sans-serif;
 
 }
-.Nav a {
-    font-size: 18px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px ;
-    transition: .3s;
-}
-.Nav a:hover { 
-    color:#258d19;
-}
+
 .Inicio {
     height: 100vh;
     background: url('') ;

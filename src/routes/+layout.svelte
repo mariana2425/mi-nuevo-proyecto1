@@ -5,7 +5,7 @@
     
 </script>
 
-<Menu />
+<Menu color="#fff"/>
 
 {@render children()}
 

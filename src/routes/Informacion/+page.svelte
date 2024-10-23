@@ -1,20 +1,29 @@
 <script>
-    let activeActivity = null;
+  import contenedorb from "$lib/images/Contenedor blanco.jpg"
+  import contenedorn from "$lib/images/Contenedor negro.jpg"
+  import contendorv from "$lib/images/contenedor-verde.jpg"
+  import contenedorg from "$lib/images/contenedor-gris.jpg"
+  import contenedora from "$lib/images/contenedor-amarillo.jpg"
+  import contenedorz from "$lib/images/contenedor-azul.jpg"
 
-    function showActivity(activityId) {
-        activeActivity = activityId;
-    }
+
+ let activeActivity = null;
+
+ function showActivity(activityId) {
+  activeActivity = activityId;
+ }
 </script>
 
+<main class="mybody">
 <header>
     <h1>¡Reciclemos Juntos!</h1>
     <nav>
         <ul>
-            <li><a href="http://127.0.0.1:5500/Inicio.html">inicio</a></li>
-            <li><a href="http://127.0.0.1:5500/Actividades.html">actividades</a></li>
-            <li><a href="http://127.0.0.1:5500/Informacion.html">información</a></li>
-            <li><a href="http://127.0.0.1:5500/ingreso.html?#">Inicio Sesion</a></li>
-            <li><a href="http://127.0.0.1:5500/Funcionalidad.html">Mis metas</a></li>
+            <li><a href="/inicio">inicio</a></li>
+            <li><a href="/Actividades">actividades</a></li>
+            <li><a href="/Informacion">información</a></li>
+            <li><a href="/Iniciosesion">Inicio Sesion</a></li>
+            <li><a href="/Metas">Mis metas</a></li>
             
         </ul>
     </nav>
@@ -86,50 +95,50 @@
           <li>ENVASES TIPO BRIK: de leche, zumo, vino, aceite, etc.</li>
           <li>ENVASES METÁLICOS: latas de bebidas, botes de conserva, aerosoles, bandejas y papel de aluminio, chapas y tapas metálicas, etc.</li>
       </ul>
-   <img src="contenedor-amarillo.jpg" width="200" >
+   <img src="contenedor-amarillo.jpg" width="200" alt="">
   </div>
   <div id="CanecaAzul" class="actividad">
       <h3>El contenedor AZUL está destinado a los envases de papel y cartón.</h3>
       <li>Folios, libretas, periódicos, revistas, papel de regalo y de envolver, sobres (sin ventanilla), folletos de publicidad.
       <li>Cajas, piezas de cartón y envases (de cereales, galletas, comidas pre-cocinadas y congeladas, comida rápida, zapatos, etc.).</li>
       <li>Hueveras de cartón, tubos de cartón del papel higiénico o de las servilletas de cocina.</li>
-      <img src="contenedor-azul.jpg" width="200">
+      <img src="contenedor-azul.jpg" width="200" alt="">
   </div>
   <div id="CanecaVerde" class="actividad">
       <h3>caneca VERDE <br>
         para depositar residuos orgánicos aprovechables como los restos de comida, desechos agrícolas etc.</h3>
-      <img src="contenedor-verde.jpg" width="200">
+      <img src="contenedor-verde.jpg" width="200" alt="">
       
   </div>
   <div id="CanecaRoja" class="actividad">
       <h3>En la caneca roja. <br>
          Se deben depositar únicamente para residuos hospitalarios y similares que contengan bacterias, parásitos, virus, hongos e infecciosos como: guantes quirúrgicos, agujas, jeringas, gasas, e</h3>
-      <img src="Contenedor rojo" width="200">
+      <img src="Contenedor rojo" width="200" alt="">
       
   </div>
   <div id="CanecaGris" class="actividad">
       <h3>Caneca gris: <br>
          Aquí se deben depositar todo tipo de papeles y cartones, sin importar su procedencia, siempre y cuando sean limpios y secos; las revistas, periódicos, folletos o papeles para envolver son algunos ejemplos de residuos que puede desechar en estos recipientes</h3>
-      <img src="contenedor-gris.jpg" width="200">
+      <img src="contenedor-gris.jpg" width="200" alt="">
       
   </div>
   <div id="CanecaNaranja" class="actividad">
       <h3>en el contenedor naranja/marrón <br>
         los restos de alimentos (cáscaras de fruta, espinas de pescado, etc.).</h3>
-      <img src="Contenedor naranja.avif" width="200">
+      <img src="Contenedor naranja.avif" width="200" alt="">
       <img src="contenedor-marron.jpg" alt="">
       
   </div>
   <div id="CanecaNegra" class="actividad">
       <h3>Color negro: <br>
          Para depositar residuos no aprovechables como el papel higiénico; servilletas, papeles y cartones contaminados con comida; papeles metalizados, entre otros.</h3>
-      <img src="Contenedor negro.jpg" width="200">
+      <img src="Contenedor negro.jpg" width="200" alt="">
       
   </div>
   <div id="CanecaBlanca" class="actividad">
       <h3> Caneca Blanca: <br>
         allí deben ir los residuos aprovechables como plástico, metales, cartón, papel, vidrio, PET. </h3>
-      <img src="Contenedor blanco.jpg" width="200">
+      <img src="Contenedor blanco.jpg" width="200" alt="">
       
   </div>
 </section>
@@ -137,4 +146,127 @@
 <footer>
     <p>&copy; proyecto de grado 2024</p>
 </footer>
+</main>
 
+
+<style>
+
+.mybody{
+  font-family: Arial, sans-serif;
+    background-image: url(FONDO\ ACTIVIDADES);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #258d19;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+nav {
+    padding: 1em;
+    text-align: center; 
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; 
+  }
+  
+  nav li {
+    margin: 0 20px; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  nav li:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+  nav a {
+    color: white; 
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2em; 
+    transition: color 0.3s ease-in-out; 
+  }
+  
+  nav a:hover {
+    color: #2ecc71; 
+  }
+  
+  nav a::before {
+    content: ""; 
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #3498db; 
+    transition: width 0.3s ease-in-out; 
+  }
+  
+  nav a:hover::before {
+    width: 100%; 
+  }
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #4CAF50;
+    text-align: center;
+}
+
+ul {
+    list-style-type: square;
+}
+
+
+footer {
+    background-color: #333;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .cards .red {
+    background-color: #007e9e;
+  }
+  
+  .cards .blue {
+    background-color: #0062ff;
+  }
+  
+  .cards .green {
+    background-color: #18cd5e;
+  }
+  
+  .cards {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center; 
+  }
+  
+  .cards .red {
+    background-color: #007e9e;
+    width: 150px; 
+  }
+  
+ 
+</style>

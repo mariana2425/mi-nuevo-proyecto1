@@ -1,19 +1,18 @@
 <script>
-    import cerdo from "$lib/images/cerdo.jpg"
+    import cerdita from "$lib/images/cerdo.jpg"
     import guitarra from '$lib/images/guitarra.jpg'
+    import maceta from "$lib/images/maceta.jpg"
+    import porta from "$lib/images/portalapices.jpg"
+    import Menu from "$lib/components/Menu.svelte";
+
 </script>
+
 
 
 <main class="bodymi">
 <header class="Nav">
     <h1>RECICLA PARA UN MUNDO MEJOR</h1>
-    <nav class="EN">
-        <a href="/inicio">Inicio</a>
-            <a href="/Actividades">Actividades</a>
-            <a href="/Informacion">Información</a>
-            <a href="/Iniciosesion">Iniciar Sesión</a>
-            <a href="/Metas">Mis metas</a>
-    </nav>
+    <Menu color="white" colorHover="" />
 </header>
 <br>
 <br>
@@ -25,7 +24,7 @@
         <br>
         <div class="galeria">
             <div class="foto">
-              <img src="images.jfif" alt="">
+              <img src={maceta} alt="maceta">
               <div id="actividad1" class="actividades">
                  <h3>Actividad 1: Manualidades con materiales reciclable</h3>
                  <p>Descubre cómo hacer manualidades utilizando materiales reciclados.</p>
@@ -52,15 +51,15 @@
 
                     <ul><li>Como ves, es muy fácil y divertido contribuir a cuidar el medio ambiente con el reciclaje creativo. Anímate y cuéntanos tus experiencias y tus ideas creativas para reciclar.</li></ul>
                     <br>
-                    <p>VIDEO REFERENTE ⬇️ </p>
-                    <iframe width="500" height="200" src="https://www.youtube.com/watch?v=c-G6BcEaBiY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>IMAGEN REFERENTE ⬇️ </p>
+                    
              </div>
          </div>
         </div>
 
         <div class="galeria">
           <div class="foto">
-                   <img src="Guitarra.jpg" alt="">
+                   <img src={guitarra} alt="guitarra">
               <div id="actividad2" class="actividades">
                     <h3>Actividad 2: Manualidades con Material Reciclado</h3>
                    <p>Descubre cómo hacer manualidades utilizando materiales reciclados.</p>
@@ -91,10 +90,10 @@
               </div>
            </div>
         </div>
-
+ 
         <div class="galeria">
          <div class="foto">
-              <img src="Alcanciacerdo.jfif" alt="">
+              <img src={cerdita} alt="Cerdito">
               <div id="actividad3" class="actividades">
                    <h3>Actividad 3: Alcancias de plastico</h3>
                    <p>Descubre cómo hacer manualidades utilizando materiales reciclados.</p>
@@ -132,7 +131,7 @@
 
      <div class="galeria">
          <div class="foto">
-                 <img src="Porta.jfif" alt="">
+                 <img src={porta} alt="porta">
              <div id="actividad4" class="actividades">
                      <h3>Actividad 4: Portalapices</h3>
                       <p>Descubre cómo hacer manualidades utilizando materiales reciclados.</p>
@@ -231,17 +230,7 @@ div.galeria:hover{
     border: 1px solid rgb(160, 240, 128);
     transform: rotate(-3deg);
 }
-.Nav a {
-    font-size: 18px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px ;
-    transition: .3s;
-}
-.Nav a:hover { 
-    color:#005200;
-}
+
 .h2{
     color: green;
 }
