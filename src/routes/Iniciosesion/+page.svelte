@@ -8,7 +8,7 @@
 <div class="mybody" >
 	<div class="container" class:toggle={signIn}>
 		<div class="container-form">
-			<form class="sign-in" action="/inicio">
+			<form class="sign-in" action="/Metas">
 				<h2>Iniciar Sesión</h2>
 				<div class="social-networks">
 					<ion-icon name="logo-twitter"></ion-icon>
