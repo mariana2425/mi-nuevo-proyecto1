@@ -15,25 +15,12 @@
 </script>
 
 <main class="mybody">
-<header>
-    <h1>¡Reciclemos Juntos!</h1>
-    <nav>
-        <ul>
-            <li><a href="/inicio">inicio</a></li>
-            <li><a href="/Actividades">actividades</a></li>
-            <li><a href="/Informacion">información</a></li>
-            <li><a href="/Iniciosesion">Inicio Sesion</a></li>
-            <li><a href="/Metas">Mis metas</a></li>
-            
-        </ul>
-    </nav>
-</header>
 
 
 
 <section id="intro">
     <h2>¿Por qué Reciclar?</h2>
-    <p>Reciclar es importante por varias razones. En primer lugar, ayuda a reducir la cantidad de basura que termina en los vertederos y la incineración, lo que a su vez reduce la contaminación del medio ambiente. <br>
+    <p>Reciclar es importante por varias razones. <br> En primer lugar, ayuda a reducir la cantidad de basura que termina en los vertederos y la incineración, lo que a su vez reduce la contaminación del medio ambiente. <br>
       Además, el reciclaje ayuda a ahorrar recursos naturales, como agua y energía, ya que se requiere menos energía para producir nuevos productos a partir de materiales reciclados que para producirlos a partir de materias primas vírgenes. <br> 
       El reciclaje también reduce la necesidad de extraer materias primas, lo que ayuda a proteger el medio ambiente y a conservar los recursos naturales. <br>
       Otro beneficio del reciclaje es que ayuda a reducir las emisiones de gases de efecto invernadero, lo que contribuye a mitigar el cambio climático.</p>
@@ -142,103 +129,36 @@
       
   </div>
 </section>
-
-<footer>
-    <p>&copy; proyecto de grado 2024</p>
-</footer>
 </main>
-
-
 <style>
 
-.mybody{
+ .mybody{
   font-family: Arial, sans-serif;
     background-image: url(FONDO\ ACTIVIDADES);
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #258d19;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav {
-    padding: 1em;
-    text-align: center; 
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-between; 
-  }
-  
-  nav li {
-    margin: 0 20px; 
-    transition: transform 0.3s ease-in-out; 
-  }
-  
-  nav li:hover {
-    transform: translateY(-5px); 
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); 
-  }
-  
-  nav a {
-    color: white; 
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 1.2em; 
-    transition: color 0.3s ease-in-out; 
-  }
-  
-  nav a:hover {
-    color: #2ecc71; 
-  }
-  
-  nav a::before {
-    content: ""; 
-    display: block;
-    width: 0;
-    height: 2px;
-    background-color: #3498db; 
-    transition: width 0.3s ease-in-out; 
-  }
-  
-  nav a:hover::before {
-    width: 100%; 
-  }
-
-section {
+    margin: 10px;
     padding: 20px;
-    margin: 20px;
+  }
+ 
+ section {
+    padding: 30px;
+    margin-top: 20px;
     background-color: white;
+    
     border-radius: 8px;
-}
+  }
 
-h2 {
+ h2 {
     color: #4CAF50;
     text-align: center;
-}
+  }
 
-ul {
+ ul {
     list-style-type: square;
-}
+  }
 
 
-footer {
-    background-color: #333;
-    text-align: center;
-    padding: 1em 0;
-    margin-top: 20px;
-}
-
-.cards {
+ .cards {
     display: flex;
     flex-direction: row;
     gap: 15px;

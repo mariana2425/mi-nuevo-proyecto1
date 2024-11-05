@@ -10,10 +10,6 @@
 
 
 <main class="bodymi">
-<header class="Nav">
-    <h1>RECICLA PARA UN MUNDO MEJOR</h1>
-    <Menu color="white" colorHover="" />
-</header>
 <br>
 <br>
     <section class="actividades">
@@ -173,19 +169,6 @@
     color: #0e0d0d;
 }
 
-header {
-    padding: 20px;
-    text-align: center;
-    background-color: #258d19;
-}
-
-header h1 {
-    font-size: 36px;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-    color: #ededed;
-}
 
 section {
     padding: 50px;
@@ -213,7 +196,7 @@ h1{
 }
 
 div.galeria{
-    background-color: #76d16b;
+    background-color: #62bd57;
     margin: 10px 20px;
     box-shadow: 0 4px 8px 0 rgb(135, 250, 173), 0 6px 20px 0 rgb(233, 229, 229) ;
     float: left;

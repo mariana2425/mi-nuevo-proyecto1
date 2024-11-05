@@ -1,21 +1,13 @@
+<script>
+   
+</script>
+
 <main class="mybody">
 
-	<header class="Nav">
-		<a href="/" class="Logo">Reduce, Reutiliza y Recicla</a>
-		<nav class="EN">
-			<a href="/inicio">Inicio</a>
-			<a href="/Actividades">Actividades</a>
-			<a href="/Informacion">Información</a>
-			<a href="/Iniciarsesion">Iniciar Sesión</a>
-			<a href="/Metas">Mis metas</a>
-		</nav>
-	</header>
-
 	<h2 class="H2">Registro de Actividades</h2>
-
 	<div class="container">
 		<div class="Actividades">
-			<form action="#" method="post" id="registroForm">
+			<form action="/" method="post" id="registroForm">
 				<ul>
 					<li>
 						<input type="checkbox" id="actividad1" name="actividades[]" value="actividad1" /><label
@@ -70,7 +62,6 @@
 		<p>MUCHAS GRACIAS POR PARTICIPAR EL DÍA DE HOY. ESPERA TUS TAREAS DE MAÑANA.</p>
 		<p>Has acumulado <span id="puntosRecibidos">0</span> puntos.</p>
 	</div>
-    
 </main>
 
 <style>

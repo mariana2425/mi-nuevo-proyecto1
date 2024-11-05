@@ -1,118 +1,96 @@
+<script>
+import inicio from "$lib/images/ambiente.png"
+</script>
+
 <main class="bodymin">
-<header class="Nav">
-    <a href="/" class="Logo">Reduce, Reutiliza y Recicla </a>
-    <nav class="EN">
-        <a href="/inicio">Inicio</a>
-            <a href="/Actividades">Actividades</a>
-            <a href="/Informacion">Información</a>
-            <a href="/Iniciosesion">Iniciar Sesión</a>
-            <a href="/Metas">Mis metas</a>
-    </nav>
-</header>
-<section class="Inicio">
-    <div class="Inicio-contenido">
-        <h1>"Hola, Bienvenido a Recicla y Crea"</h1>
-        <p>Aprende y participa en nuestras actividades de reciclaje para contribuir a un planeta más limpio.</p>
+    
+    <div class="imagen-derecha">
+        <img src={inicio}  alt="inicio">
     </div>
-    <div class="Ingresa">
-        <a href="/Iniciosesion" >Iniciar Sesión</a>
-    </div>
-    <div class="Inicio-link">
-        <a href="/"><i class='bx bxl-facebook'></i></a>
-        <a href="/"><i class='bx bxl-gmail'></i></a>
-        <a href="/"><i class='bx bxl-instagram' ></i></a>
-    </div>
-</section>
+    <section class="Inicio">
+        <div class="Inicio-contenido">
+            <h1>"Hola, Bienvenido a Recicla y Crea"</h1>
+            <p>Aprende y participa en nuestras actividades de reciclaje para contribuir a un planeta más limpio.</p>
+        </div>
+
+        <div class="Ingresa">
+            <a href="/Iniciarsesion" >Inicia ya </a>
+        </div>
+        <div class="Inicio-link">
+            <a href="/"><i class='bx bxl-facebook'></i></a>
+            <a href="/"><i class='bx bxl-gmail'></i></a>
+            <a href="/"><i class='bx bxl-instagram' ></i></a>
+        </div>
+    </section>
 </main>
 
 
 <style>
+    @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' );
+    
     .bodymin {
-    margin: 0;
+        margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: rgba(0, 0, 0, 0.8);
     background-image: url(fondo2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
     object-fit: cover;
 }
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    
 
-}
-.Logo{
-    font-size: 25px;
-    color: #ededed;
-    text-decoration: none;
-    font-weight: 600;
-}
-*{
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-
-}
-.Nav a {
-    font-size: 18px;
-    color: #000000;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px ;
-    transition: .3s;
-}
-.Nav a:hover { 
-    color:#258d19;
-}
 .Inicio {
-    height: 100vh;
-    background: url('') ;
-    background-size: cover;
-    background-position: center ;
-    display: flex;
-    align-items: center;
-    padding: 0 10%;
+    margin-right: 50%;
+    margin-left: 5%;
+    margin-top: 12%;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .Inicio-contenido {
     max-width: 600px;
-
 }
 .Inicio-contenido h1 {
+    margin-left: 3%;
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: 100;
     font-size: 56px;
     font-weight: 700;
     line-height: 1.2;
-    color: #013d01;
+    color: #225a0b;
+    
 }
 .Inicio-contenido p {
-    font-size: 16px;
+    margin-left: 3%;
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: center;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: 50;
+    font-size: 20px;
     margin: 20px 0 40px;
+    color: #225a0b;
 }
 
 .Ingresa a {
-    position: relative;
+    font-family: "DynaPuff", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: 100;
+    position:relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 100%;
-    background: #6fad68;
-    border: 2px solid #74bb6c;
-    border-radius: 8px;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    background: #225a0b;
+    border: 2px solid #225a0b;
+    border-radius: 5px;
     font-size: 19px;
-    color: #5d745d;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     letter-spacing: 1px;
@@ -121,20 +99,21 @@ header {
     transition: .5s;
 }
 .Ingresa a:hover{
-    color:#87aa83;
+    color: rgb(255, 255, 255);
 }
-
-.Ingresa a:nth-child(2) {
-    background: transparent;
-    color:#258d19;
+.Ingresa a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #225a0b;
+    z-index: -1;
+    transition: .5s;
 }
-.Ingresa a:nth-child(2):hover{
-    color:#258d19;
-
-}
-.Ingresa a:nth-child(2)::before{
-    background: #005200;
-
+.Ingresa a:hover::before {
+    width: 100%;
 }
 
 .Inicio-link {
@@ -143,6 +122,8 @@ header {
     width: 170px;
     display: flex;
     justify-content: space-between;
+    background-color: #ffffff;
+    border-radius: 8px;
 }
 .Inicio-link a {
     position: relative;
@@ -152,17 +133,17 @@ header {
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #258d19;
+    border: 2px solid #143805;
     border-radius: 50%;
     font-size: 20px;
-    color: #258d19;
+    color: #143805;
     text-decoration: none;
     z-index: 1;
     overflow: hidden;
     transition: .5s;
 }
 .Inicio-link a:hover {
-    color:#005200
+    color: white;
 }
 .Inicio-link a::before{
     content: '';
@@ -171,12 +152,18 @@ header {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #258d19;
+    background-color:#143805;
     z-index: -1;
     transition: .5s;
 }
 .Inicio-link a:hover::before {
     width: 100%;
 }
-</style>
 
+.imagen-derecha {
+    position: fixed;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+</style>
