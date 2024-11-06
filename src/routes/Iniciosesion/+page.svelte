@@ -65,7 +65,7 @@
 				<p>
 					Regístrese con sus datos personales para poder ingresar al maravilloso mundo del reciclaje
 				</p>
-				<button onclick={()=> signIn = !signIn} class="button" id="btn-sign-in">Iniciar Sesión</button>
+				<button onclick={()=> signIn = !signIn} class="button" id="btn-sign-in">/inicio</button>
 			</div>
 		</div>
 	</div>
