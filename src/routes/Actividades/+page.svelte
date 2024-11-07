@@ -4,6 +4,7 @@
     import maceta from "$lib/images/maceta.jpg"
     import porta from "$lib/images/portalapices.jpg"
     import Menu from "$lib/components/Menu.svelte";
+    import planta from "$lib/images/planta.png";
 
 </script>
 
@@ -15,7 +16,12 @@
     <section class="actividades">
         <h2 class="h2" >Actividades</h2> 
         <p>¿SABIAS QUE LOS RESIDUOS PLASTICOS O DE CARTON PUEDEN SER USADOS DE MANERA MUY CREATIVA?</p>
-        <ul><li>En esta pagina te daremos algunas ideas para que puedas divertirte creando mientras ayudas al planeta, ademas de este encontraras el paso a paso de cada una de ellas dando click en su imagen.</li></ul>
+        <div class="prueba">
+          <ul>
+            <li class="imagen">En esta pagina te daremos algunas ideas para que puedas divertirte creando mientras ayudas al planeta, ademas de este encontraras el paso a paso de cada una de ellas dando click en su imagen.</li>
+          </ul>
+          <img src={planta} width="150" alt="">
+        </div>
         <br>
         <br>
         <div class="galeria">
@@ -176,7 +182,8 @@ section {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 35px;
+    text-align: center;
     font-weight: 800;
     background-color: white;
     text-shadow: 1px 2px 2px rgb(238, 238, 238), 0 0 25px #AFE879, 0 0 5px #AFE879;
@@ -186,13 +193,6 @@ p {
     font-size: 16px;
     line-height: 1.6;
     font-weight: 700;
-}
-
-
-h1{
-    color: white;
-    text-shadow: 1px 2px rgb(236, 236, 236), 0 0 25px #AFE879, 0 0 5px #AFE879;
-    text-align: center;
 }
 
 div.galeria{
@@ -217,5 +217,14 @@ div.galeria:hover{
 .h2{
     color: green;
 }
-
+.prueba {
+	display: flex;
+	justify-items: center;
+}
+.imagen{
+    margin-right: 60px;
+}
+img{
+    margin-right: 20px;
+}
 </style>

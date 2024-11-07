@@ -14,7 +14,7 @@ import inicio from "$lib/images/ambiente.png"
         </div>
 
         <div class="Ingresa">
-            <a href="/Iniciarsesion" >Inicia ya </a>
+            <a href="/Actividades" >Inicia ya </a>
         </div>
         <div class="Inicio-link">
             <a href="/"><i class='bx bxl-facebook'></i></a>
@@ -29,7 +29,7 @@ import inicio from "$lib/images/ambiente.png"
     @import url('https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' );
     
     .bodymin {
-        margin: 0;
+    margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     color: rgba(0, 0, 0, 0.8);

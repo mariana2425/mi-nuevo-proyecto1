@@ -11,7 +11,7 @@
 <div class="mybody" >
 	<div class="container" class:toggle={signIn}>
 		<div class="container-form">
-			<form class="sign-in" action="/Metas">
+			<form class="sign-in" action="/inicio">
 				<h2>Iniciar Sesión</h2>
 				<div class="social-networks">
 					<ion-icon name="logo-twitter"></ion-icon>
@@ -33,7 +33,7 @@
 		</div>
 
 		<div class="container-form" class:toggle={signIn}>
-			<form class="sign-up">
+			<form class="sign-up" action="/inicio">
 				<h2>Registrarse</h2>
 				<div class="social-networks">
 					<ion-icon name="logo-twitter"></ion-icon>
@@ -61,14 +61,14 @@
 			<div class="welcome-sign-up welcome">
 				<h3>¡Bienvenido!</h3>
 				<p>Ingrese sus datos personales para poder ingresar al maravilloso mundo del reciclaje</p>
-				<button onclick={()=> signIn = !signIn} class="button" id="btn-sign-up">Registrarse</button>
+				<button onclick={()=> signIn = !signIn} class="button" id="btn-sign-up">REGISTRARSE</button>
 			</div>
 			<div class="welcome-sign-in welcome">
 				<h3>¡Hola!</h3>
 				<p>
 					Regístrese con sus datos personales para poder ingresar al maravilloso mundo del reciclaje
 				</p>
-				<button onclick={()=> signIn = !signIn} class="button" id="btn-sign-in">/inicio</button>
+				<button onclick={()=> signIn = !signIn} class="button" id="btn-sign-in">INICIAR SESION</button>
 			</div>
 		</div>
 	</div>
@@ -165,7 +165,8 @@
 		cursor: pointer;
 		margin-top: 10px;
 		background-color: #258d19;
-		color: white;
+		align-items: center;
+		color:white;
 	}
 
 	.sign-up {
