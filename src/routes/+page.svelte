@@ -7,7 +7,6 @@
     let signIn = false
 </script>
 
-
 <div class="mybody" >
 	<div class="container" class:toggle={signIn}>
 		<div class="container-form">
@@ -21,11 +20,11 @@
 				<span>Por favor utilice su correo y contraseña</span>
 				<div class="container-input">
 					<ion-icon name="mail-outline"></ion-icon>
-					<input type="text" placeholder="Correo" />
+					<input name="correo" type="text" placeholder="Correo" />
 				</div>
 				<div class="container-input">
 					<ion-icon name="lock-closed-outline"></ion-icon>
-					<input type="password" placeholder="Contraseña" />
+					<input name="password" type="password" placeholder="Contraseña" />
 				</div>
 				<a href="/">¿Olvidaste tu contraseña?</a>
 				<button class="button">INICIAR SESION</button>
@@ -43,15 +42,15 @@
 				<span> Por favor utilice su correo electrónico para registrarse</span>
 				<div class="container-input">
 					<ion-icon name="person-outline"></ion-icon>
-					<input type="text" placeholder="Nombre" />
+					<input name="nombre" type="text" placeholder="Nombre" />
 				</div>
 				<div class="container-input">
 					<ion-icon name="mail-outline"></ion-icon>
-					<input type="text" placeholder="Correo" />
+					<input name="correo" type="text" placeholder="Correo" />
 				</div>
 				<div class="container-input">
 					<ion-icon name="lock-closed-outline"></ion-icon>
-					<input type="password" placeholder="Contraseña" />
+					<input name="password" type="password" placeholder="Contraseña" />
 				</div>
 				<button class="button">REGISTRARSE</button>
 			</form>
